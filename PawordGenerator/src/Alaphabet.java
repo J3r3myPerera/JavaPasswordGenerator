@@ -6,7 +6,7 @@ public class Alaphabet {
 
     private final StringBuilder pool;
 
-    public Alaphabet(boolean uppercaseNeeded, boolean lowercaseNeeded, boolean numberNeeded, boolean specialCharatorNeeded) {
+    public Alaphabet(boolean uppercaseNeeded, boolean lowercaseNeeded, boolean numberNeeded, boolean specialCharacterNeeded) {
         pool = new StringBuilder();
 
         if (uppercaseNeeded) {
@@ -18,7 +18,7 @@ public class Alaphabet {
         if (numberNeeded) {
             pool.append(numbers);
         }
-        if (specialCharatorNeeded){
+        if (specialCharacterNeeded){
             pool.append(symbols);
         }
     }
